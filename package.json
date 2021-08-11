@@ -4,12 +4,15 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build": "cd client && npm run build",
-        "install-client": "cd client && npm install",
-        "heroku-postbuild": "npm run install-client && npm run build",
-        "server": "nodemon server.js",
-        "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
-        "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"" 
+
+      "start": "node app.js",
+      "app": "nodemon app.js",
+      "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "cd cise_ass1a_worksheet3_t && npm run build",
+        "install-client": "cd cise_ass1a_worksheet3_t && npm install",
+        "heroku-postbuild": "npm run install-cise_ass1a_worksheet3_t && npm run build",
+        "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\""
+        
   },
   "repository": {
     "type": "git",
